@@ -2,8 +2,8 @@
   <li class="list-group-item todo-item"
       *ngFor="let todo of todoList">{{todo.title}}
     <div class="float-md-right">
-      <button class="btn btn-primary">Edit</button>
-      <button class="btn btn-danger">Delete</button>
+      <button class="btn btn-primary" routerLink="/todo/show/{{todo.id}}">Show</button>
+      <button class="btn btn-danger" (click)="remove(todo.id)">Delete</button>
     </div>
   </li>
 </ul>

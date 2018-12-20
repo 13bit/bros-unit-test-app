@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TodoListComponent} from './todo-list/todo-list.component';
-import {TodoEditComponent} from './todo-edit/todo-edit.component';
 import {HttpClientModule} from '@angular/common/http';
 import {TodoService} from './todo.service';
 import {TodoRoutingModule} from './todo-routing.module';
 import {TodoComponent} from './todo.component';
+import { TodoShowComponent } from './todo-show/todo-show.component';
 
 @NgModule({
   imports: [
@@ -18,8 +18,8 @@ import {TodoComponent} from './todo.component';
   ],
   declarations: [
     TodoListComponent,
-    TodoEditComponent,
-    TodoComponent
+    TodoComponent,
+    TodoShowComponent
   ]
 })
 export class TodoModule {

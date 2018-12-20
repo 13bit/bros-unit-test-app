@@ -1,0 +1,9 @@
+<div class="card"  *ngIf="todo">
+  <div class="card-body">
+    <h5 class="card-title">ID: {{todo.id}}</h5>
+    <h5 class="card-title">User ID: {{todo.userId}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Status: {{todo.completed}}</h6>
+    <p class="card-text">{{todo.title}}</p>
+    <a href="/todo/show/{{getNextTodoId(todo.id)}}" class="card-link">Next</a>
+  </div>
+</div>

@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {TodoListComponent} from './todo-list/todo-list.component';
-import {TodoEditComponent} from './todo-edit/todo-edit.component';
 import {TodoComponent} from './todo.component';
+import {TodoShowComponent} from './todo-show/todo-show.component';
 
 const routes: Routes = [
   {
@@ -14,8 +14,8 @@ const routes: Routes = [
         component: TodoListComponent
       },
       {
-        path: 'edit',
-        component: TodoEditComponent
+        path: 'show/:id',
+        component: TodoShowComponent
       },
     ]
   }
