@@ -1,0 +1,9 @@
+<ul class="list-group todo-list">
+  <li class="list-group-item todo-item"
+      *ngFor="let todo of todoList">{{todo.title}}
+    <div class="float-md-right">
+      <button class="btn btn-primary">Edit</button>
+      <button class="btn btn-danger">Delete</button>
+    </div>
+  </li>
+</ul>
